@@ -42,7 +42,7 @@ Após o carregamento/construção do mapa, se o utilizador escolher a opção "t
 
 * As bombas que estiverem nas casas diagonais irão rebentar 1.5ms depois
 
-  ![propagacao](C:\Users\pacb\Desktop\ICMP\IC2020MiniProjecto\propagacao.jpg)
+  ![propagacao](propagacao.jpg)
 
 Essas bombas irão por sua vez gerar novas explosões.
 
@@ -183,14 +183,17 @@ Os alunos deverão criar os seus próprios ficheiros de input para testarem os s
 
 Deverá ser criada uma lista de eventos. Cada explosão que ocorre irá gerar eventos que deverão ser colocados na lista. Esta lista deverá ser percorrida até que já não existam eventos. A figura representa uma possível implementação da função que faz a simulação/gestão de eventos.
 
-![flowchart](C:\Users\pacb\Desktop\ICMP\IC2020MiniProjecto\flowchart.png)
+![flowchart](flowchart.png)
 
 
-## 4..  Exemplo de utilização
+## 4. Opção Extra
+Se o programa for corrido com a opção `ncurses` deverá ser utilizada a biblioteca ncurses.h para apresentação do mapa e do menu do programa.
+
+## 5.  Exemplo de utilização
 
 A ser preenchido.
 
-## 5. Material a entregar
+## 6. Material a entregar
 
 * Ficheiro `.c` com código devidamente comentado e indentado:
     - Deve implementar as funcionalidades pedidas.
@@ -200,13 +203,13 @@ A ser preenchido.
     - Incorrecta indentação do código poderá originar penalizações na nota.
 
 
-## 6. Peso na avaliação
+## 7. Peso na avaliação
 
 O projecto vale 25% da nota final e será cotado de 0 a 20 valores.
 
 Após a entrega do projecto será realizada uma defesa do projecto onde cada elemento do grupo terá de efectuar alterações ao código. Se o aluno não conseguir efectuar as alterações pedidas ao seu código será aplicada uma penalização sobre a nota do projecto que poderá variar entre 10% a 100%.
 
-## 7. Honestidade Académica
+## 8. Honestidade Académica
 
 Nesta disciplina, espera-se que cada aluno siga os mais altos padrões de honestidade académica. Trabalhos que sejam identificados como cópias serão anulados e os alunos envolvidos terão nota zero - quer tenham copiado, quer tenham deixado copiar.
 Para evitar situações deste género, recomendamos aos alunos que nunca partilhem ou mostrem o seu código.
