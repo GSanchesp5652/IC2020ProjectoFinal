@@ -28,6 +28,7 @@ Para a realização deste projecto, os alunos deverão adquirir as seguintes com
 - Argumentos do main
 - Estruturas
 - Memória Dinâmica
+- git
 - Trabalho em grupo
 
 ## 1.2 Descrição
@@ -201,7 +202,7 @@ A ser preenchido.
     - A plataforma corre automaticamente uma série de testes e no fim atribui uma classificação **indicativa**. Os alunos deverão analisar o relatório emitido pela plataforma e poderão alterar o código e voltar a submeter o trabalho. Neste trabalho não haverá limite de submissões.
       A plataforma não permite a entrega de trabalhos após a data e hora limite.
     - Incorrecta indentação do código poderá originar penalizações na nota.
-
+* Ficheiro .txt a entregar no Moodle com o link para o repositório do GitHub onde têm o código. Será apreciada a verificação de commits por ambos os elementos do grupo.
 
 ## 7. Peso na avaliação
 
