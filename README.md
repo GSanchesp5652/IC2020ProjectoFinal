@@ -151,6 +151,7 @@ O ficheiro de input será um ficheiro codificado em texto que deverá conter um 
 Exemplo de ficheiro de input:
 
 ```
+15 15
 0 1
 0 2
 0 3
@@ -171,7 +172,7 @@ Exemplo de ficheiro de input:
 8 6
 ```
 
-A leitura do ficheiro deverá ser realizada até detectar o fim do ficheiro. 
+A leitura do ficheiro deverá ser realizada até detectar o fim do ficheiro. A primeira linha do ficheiro contém o tamanho do mapa.
 
 Caso não seja possível abrir o ficheiro, o programa deverá imprimir no stdout a mensagem `Error opening file`.
 
@@ -184,9 +185,7 @@ Os alunos deverão criar os seus próprios ficheiros de input para testarem os s
 
 ### 3.1 - Alocação dinâmica do mapa
 
-Ao iniciar o programa deverá assumir o tamanho mínimo de 25 linhas e 25 colunas. O tamanho do mapa poderá apenas ser alterado quando o utilizador escolhe a opção 'read' ou a opção 'plant'. Se durante o processamento dessas opções for detectada uma coordenada superior ao máximo, o tamanho do mapa deverá ser aumentado. O novo tamanho deverá ser o minímo suficiente para suportar a coordenada.
-Por exemplo: Considere que o mapa está inicializado com o tamanho mínimo 25x25. Durante a leitura do ficheiro, é lida a coordenata (X=30, Y=10), o tamanho do mapa deverá então ser alterado, passando este a conter 31 linhas e 25 colunas. Note que o mapa não precisa de ser quadrado.
-
+Ao iniciar o programa deverá assumir o tamanho mínimo de 25 linhas e 25 colunas. O tamanho do mapa poderá apenas ser alterado quando o utilizador escolhe a opção 'read'. A primeira linha do ficheiro deverá conter as dimensões do mapa com formato `DIMX DIMY`. Note que o mapa não precisa de ser quadrado.
 
 Para efectuar a alocação dinâmica de uma matriz em C poderá seguir o seguinte procedimento:
 ```C
