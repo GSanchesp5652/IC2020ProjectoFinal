@@ -182,9 +182,42 @@ Os alunos deverão criar os seus próprios ficheiros de input para testarem os s
 
 ## 3. Implemetação
 
+### 3.1 - Alocação dinâmica do mapa
+
+Ao iniciar o programa deverá assumir o tamanho mínimo de 25 linhas e 25 colunas. O tamanho do mapa poderá apenas ser alterado quando o utilizador escolhe a opção 'read' ou a opção 'plant'. Se durante o processamento dessas opções for detectada uma coordenada superior ao máximo, o tamanho do mapa deverá ser aumentado. O novo tamanho deverá ser o minímo suficiente para suportar a coordenada.
+Por exemplo: Considere que o mapa está inicializado com o tamanho mínimo 25x25. Durante a leitura do ficheiro, é lida a coordenata (X=30, Y=10), o tamanho do mapa deverá então ser alterado, passando este a conter 31 linhas e 25 colunas. Note que o mapa não precisa de ser quadrado.
+
+
+Para efectuar a alocação dinâmica de uma matriz em C poderá seguir o seguinte procedimento:
+```C
+// aloca um vector de vectores com tamanho nrows
+char **map = (char **) malloc(nrows * sizeof(char *));
+
+if (map == NULL)
+{
+    puts("Error: Out of Memory");
+    exit(1);
+}
+// para cada elemento do vector, aloca um vector com tamanho ncols
+for(i = 0; i < nrows; i++)
+{
+    map[i] = malloc(ncols * sizeof(char));
+    if (map[i] == NULL)
+    {
+        puts("Error: Out of Memory");
+        exit(1);
+    }
+}    
+// a partir daqui pode aceder aos elementos da matriz da forma habitual map[x][y]
+```
+
+### 3.2 - Simulação
+
 Deverá ser criada uma lista de eventos. Cada explosão que ocorre irá gerar eventos que deverão ser colocados na lista. Esta lista deverá ser percorrida até que já não existam eventos. A figura representa uma possível implementação da função que faz a simulação/gestão de eventos.
 
 ![flowchart](flowchart.png)
+
+
 
 
 ## 4. Opção Extra
