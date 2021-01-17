@@ -86,7 +86,7 @@ Sempre que o programa estiver à espera que o utilizador introduza um input, dev
 
 ### 2.1.1 - Opção `read`
 
-Quando o utilizador introduz o texto `read` seguido do nome do ficheiro `filename`, o programa deverá ler o ficheiro com o nome `filename` e construir o mapa correspondente. 
+Quando o utilizador introduz o texto `read` seguido do nome do ficheiro `filename`, o programa deverá ler o ficheiro com o nome `filename` e construir o mapa correspondente. Se houver um mapa já carregado na memória, deverá apagar por completo o mapa já existente. 
 
 ### 2.1.2 Opção `show`
 
