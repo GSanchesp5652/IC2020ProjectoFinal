@@ -218,7 +218,7 @@ Deverá ser criada uma lista de eventos. Cada explosão que ocorre irá gerar ev
 
 ![flowchart](flowchart.png)
 
-
+Cada evento está associado a um tempo, e a uma coordenada de uma bomba. A implementação mais simples será utilizar uma estrutura. A lista de eventos poderá ser implementada recorrendo a uma lista ligada ou a um vector. Contudo, a implementação é mais simples utilizando uma lista ligada em que a inserção na lista é feita de forma ordenada. Ou seja, quando um evento é criado, ele é colocado na lista de forma ordenada, e assim a primeira posição da lista é sempre o evento com menor `t`.
 
 
 ## 4. Opção Extra
