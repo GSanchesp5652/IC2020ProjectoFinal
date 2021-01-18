@@ -210,6 +210,8 @@ for(i = 0; i < nrows; i++)
 // a partir daqui pode aceder aos elementos da matriz da forma habitual map[x][y]
 ```
 
+Se necessitar de alterar a dimensão do mapa, poderá faze-lo utilizando a função `realloc()`. Contudo apenas poderá realocar memória que já tenha sido alocada, pelo que é necessário algum cuidado no desenho desta funcionalidade.
+
 ### 3.2 - Simulação
 
 Deverá ser criada uma lista de eventos. Cada explosão que ocorre irá gerar eventos que deverão ser colocados na lista. Esta lista deverá ser percorrida até que já não existam eventos. A figura representa uma possível implementação da função que faz a simulação/gestão de eventos.
