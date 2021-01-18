@@ -210,7 +210,9 @@ for(i = 0; i < nrows; i++)
 // a partir daqui pode aceder aos elementos da matriz da forma habitual map[x][y]
 ```
 
-Se necessitar de alterar a dimensão do mapa, poderá faze-lo utilizando a função `realloc()`. Contudo apenas poderá realocar memória que já tenha sido alocada, pelo que é necessário algum cuidado no desenho desta funcionalidade.
+Se necessitar de alterar a dimensão do mapa, poderá faze-lo utilizando a função `realloc()`. Contudo apenas poderá realocar memória que já tenha sido alocada, pelo que é necessário algum cuidado no desenho desta funcionalidade. A figura seguinte propõe uma implementação possível para esta rotina.
+  ![realloc](realloc_flow.png)
+
 
 ### 3.2 - Simulação
 
