@@ -82,7 +82,7 @@ sos                 - show menu
 +-----------------------------------------------------
 ```
 
-Sempre que o programa estiver à espera que o utilizador introduza um input, deverá imprimir, numa linha isolada, o caracter `>` - ver exemplo.
+Sempre que o programa estiver à espera que o utilizador introduza um input, deverá imprimir, numa linha isolada, o caracter `>` - ver exemplo. Se o utilizador introduzir um input inválido o programa deverá mostrar a mensagem `Invalid command!` e deverá continuar à espera que o utilizar introduza um input.
 
 ### 2.1.1 - Opção `read`
 
@@ -220,7 +220,7 @@ Deverá ser criada uma lista de eventos. Cada explosão que ocorre irá gerar ev
 
 
 ## 4. Opção Extra
-Se o programa for corrido com a opção `ncurses` deverá ser utilizada a biblioteca ncurses.h para apresentação do mapa e do menu do programa.
+Se o programa for corrido com a opção `-a` (como argumento do main) deverá ser utilizada a biblioteca ncurses.h para apresentação do mapa e do menu do programa. Esta opção não será avaliada pelo PANDORA.
 
 ## 5.  Exemplo de utilização
 
