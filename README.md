@@ -224,7 +224,56 @@ Se o programa for corrido com a opção `ncurses` deverá ser utilizada a biblio
 
 ## 5.  Exemplo de utilização
 
-A ser preenchido.
+### 5.1. Exemplo opção log
+```bash
++-----------------------------------------------------
+read <filename>         - read input file
+show                    - show the mine map
+trigger <x> <y>         - trigger mine at <x> <y>
+log <x> <y>             - trigger mine at <x> <y>
+plant <x> <y>           - place armed mine at <x> <y>
+export <filename>       - save file with current map
+quit                    - exit program
+sos                     - show menu
++-----------------------------------------------------
+>read map0_e.ini
+>show
+_.....____
+____._____
+___.__.__.
+____.____.
+_________.
+__...____.
+____..___.
+__.___.___
+___.__.___
+__________
+>log 0 1
+0 [0, 1]
+10 [0, 2]
+20 [0, 3]
+30 [0, 4]
+35 [1, 4]
+40 [0, 5]
+50 [2, 3]
+65 [3, 4]
+>shoq
+Invalid command!
+>show
+_*****____
+____*_____
+___*__.__.
+____*____.
+_________.
+__...____.
+____..___.
+__.___.___
+___.__.___
+__________
+>quit
+```
+
+
 
 ## 6. Material a entregar
 
