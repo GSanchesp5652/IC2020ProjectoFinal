@@ -39,9 +39,9 @@ Pretende agora desenvolver-se um simulador capaz de calcular a propagação da e
 
 Após o carregamento/construção do mapa, se o utilizador escolher a opção "trigger", a bomba seleccionada deverá explodir. Essa explosão será propagada para as bombas adjacentes e fará com que estas também explodam:
 
-* As bombas que estiverem à distancia de 1 casa em X ou Y irão rebentar 1ms depois.
+* As bombas que estiverem à distancia de 1 casa em X ou Y irão rebentar 10ms depois.
 
-* As bombas que estiverem nas casas diagonais irão rebentar 1.5ms depois
+* As bombas que estiverem nas casas diagonais irão rebentar 15ms depois
 
   ![propagacao](propagacao.jpg)
 
