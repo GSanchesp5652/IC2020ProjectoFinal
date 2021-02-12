@@ -2,7 +2,7 @@
 
 *Introdução à Computação - 2020/2021*
 
-# Projecto Final - DEFESA 1
+# Projecto Final - DEFESA 2
 
 Crie uma nova função que remove todas as bombas existentes. Essa função deve ser acessível através do menu com a opção "reset":
 
